@@ -1,0 +1,613 @@
+@CHARSET "UTF-8";
+@import url(//fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+}
+/* Reset */
+.rbContainer div, .rbContainer span, .rbContainer applet, .rbContainer object, .rbContainer iframe,
+.rbContainer h1, .rbContainer h2, .rbContainer h3, .rbContainer h4, .rbContainer h5, .rbContainer h6, .rbContainer p, .rbContainer blockquote, .rbContainer pre,
+.rbContainer a, .rbContainer abbr, .rbContainer acronym, .rbContainer address, .rbContainer big, .rbContainer cite, .rbContainer code,
+.rbContainer del, .rbContainer dfn, .rbContainer em, .rbContainer img, .rbContainer ins, .rbContainer kbd, .rbContainer q, .rbContainer s, .rbContainer samp,
+.rbContainer small, .rbContainer strike, .rbContainer strong, .rbContainer sub, .rbContainer sup, .rbContainer tt, .rbContainer var,
+.rbContainer b, .rbContainer u, .rbContainer i, .rbContainer center,
+.rbContainer dl, .rbContainer dt, .rbContainer dd, .rbContainer ol, .rbContainer ul, .rbContainer li,
+.rbContainer fieldset, .rbContainer form, .rbContainer label, .rbContainer legend,
+.rbContainer table, .rbContainer caption, .rbContainer tbody, .rbContainer tfoot, .rbContainer thead, .rbContainer tr, .rbContainer th, .rbContainer td,
+.rbContainer article, .rbContainer aside, .rbContainer canvas, .rbContainer details, .rbContainer embed, 
+.rbContainer figure, .rbContainer figcaption, .rbContainer footer, .rbContainer header, .rbContainer hgroup, 
+.rbContainer menu, .rbContainer nav, .rbContainer output, .rbContainer ruby, .rbContainer section, .rbContainer summary,
+.rbContainer time, .rbContainer mark, .rbContainer audio, .rbContainer video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.rbContainer article, .rbContainer aside, .rbContainer details, .rbContainer figcaption, .rbContainer figure, 
+.rbContainer footer, .rbContainer header, .rbContainer hgroup, .rbContainer menu, .rbContainer nav, .rbContainer section {
+	display: block;
+}
+.rbContainer ol, .rbContainer ul {
+	list-style: none;
+}
+.rbContainer blockquote, .rbContainer q {
+	quotes: none;
+}
+.rbContainer blockquote:before, .rbContainer blockquote:after,
+.rbContainer q:before, .rbContainer q:after {
+	content: '';
+	content: none;
+}
+.rbContainer table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* init */
+.rbContainer div,
+.rbContainer p,
+.rbContainer span,
+.rbContainer ul{
+	background-color: inherit;
+	color: inherit;
+	font: inherit;
+}
+
+/* General */
+.rbContainer .rbBold{font-weight: bold !important}
+.rbContainer .rbItalic{font-style: italic !important}
+.rbContainer .rbUnderline{text-decoration: underline !important}
+.rbContainer .rbFloatLeft{float: left}
+.rbContainer .rbFloatRight{float: right}
+.rbContainer .rbClearLeft{clear: left}
+.rbContainer .rbClearRight{clear: right}
+.rbContainer .rbClearBoth{clear: both}
+.rbContainer .rbOverflow{overflow: hidden}
+.rbContainer .rbAlignRight{text-align: right !important}
+.rbContainer .rbAlignCenter{text-align: center !important}
+.rbContainer .rbAlignMiddle{vertical-align: middle !important}
+.rbContainer .rbUpperCase{text-transform: uppercase !important}
+.rbContainer .rbInlineBlock{display: inline-block}
+.rbContainer .rbR3{margin-right: 3px}
+.rbContainer .rbR5{margin-right: 5px}
+.rbContainer .rbR14{margin-right: 14px}
+.rbContainer .rbW90{width: 90px;}
+.rbContainer .rbW180{width: 180px;}
+.rbContainer .rbW90p{width: 90%;}
+.rbContainer .rbW85p{width: 85%;}
+.rbContainer .rbW80p{width: 80%;}
+.rbContainer .rbW70p{width: 70%;}
+.rbContainer .rbH100{height: 100px;}
+
+.rbContainer a:link,
+.rbContainer a:visited,
+.rbContainer a:active{
+	color: #2a9cdd;
+	display: inline;
+	outline: none;
+	text-decoration: none;
+}
+.rbContainer a:hover{
+	text-decoration: underline;
+}
+
+.rbContainer .rbText,
+.rbContainer .rbTextarea,
+.rbContainer .rbSelect{
+	background-color: #fff;
+	border: solid 1px #c7cacc;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 9px 6px;
+	line-height: 18px;
+	
+	font-family: 'Lato', sans-serif;
+	color: #76787a;
+	font-size: 14px;
+	-moz-box-sizing: border-box;
+}
+.rbContainer .rbStretch{
+	width: 100%;
+}
+.rbContainer .rbSelect{
+	
+}
+.rbContainer input,
+.rbContainer select,
+.rbContainer textarea,
+.rbContainer button{
+	font-size: 100%;
+	font-family: inherit;
+	outline: none;
+}
+.rbContainer .rbVoucherField{
+	margin-right: 6px;
+	margin-top: 2px;
+}
+.rbContainer .rbDatepicker{
+	background: #fff url(../img/frontend/rb-calendar-icon.png) right center no-repeat;
+	cursor: pointer;
+	width: 130px; 
+}
+.rbContainer .rbBefore{
+	margin-top: 15px;
+}
+.rbContainer .rbAfter{
+	margin-bottom: 15px;
+}
+.rbContainer .rbRed{color: #f65f00}
+.rbH100{height: 100px}
+.rbH150{height: 150px}
+/* Table */
+.rbContainer .rbTable{}
+.rbContainer .rbTable th,
+.rbContainer .rbTable td{
+	padding: 12px 5px;
+	text-align: left;
+}
+.rbContainer .rbBorderBottom{
+	border-bottom: solid 1px #dbdbda;
+}
+.rbContainer .rbTable th{
+	color: #292929;
+}
+
+/* Locale menu */
+.rbContainer .rbLocale{
+	overflow: hidden;
+}
+.rbContainer .rbLocaleMenu{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	height: 32px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.rbContainer .rbLocaleMenu li{
+	display: inline-block;
+	margin: 0;
+	background-color: #ffffff;
+	width: 41px;
+}
+.rbContainer .rbLocaleMenu li:last-child{
+	width: 40px;
+}
+.rbContainer .rbLocaleMenu li a{
+	background-color: #546174;
+	display: inline-block;
+	width: 40px;
+	height: 32px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: relative;
+	text-decoration: none;
+	margin-right: 1px;
+}
+.rbContainer .rbLocaleMenu li a:LAST-CHILD{
+	margin-right: 0px;
+}
+.rbContainer .rbLocaleMenu li a img{
+	border: none;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+.rbContainer .rbLocaleMenu li a:hover{
+	background-color: #455161;
+}
+.rbContainer .rbLocaleMenu li a:active,
+.rbContainer .rbLocaleMenu li a:focus,
+.rbContainer .rbLocaleMenu li a.rbLocaleFocus{
+	background-color: #455161;
+}
+/* Button */
+.rbContainer .rbButtonRed{
+	overflow: hidden;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	background: none;
+	height: 40px;
+}
+.rbContainer .rbButtonRed abbr{
+	display: block;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+}
+.rbContainer .rbButtonRed abbr.left{
+	width: 7px;
+	background: url(../img/frontend/red-button-left.png) 0 0 no-repeat;
+}
+.rbContainer .rbButtonRed abbr.right{
+	width: 7px;
+	background: url(../img/frontend/red-button-right.png) 0 0 no-repeat;
+}
+.rbContainer .rbButtonRed abbr.middle{
+	background: url(../img/frontend/red-button-middle.png) 0 0 repeat-x;
+	color: #FFFFFF;
+    text-shadow: 0 -1px 0 #932725;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.rbContainer .rbButtonRed:HOVER{
+	cursor: pointer;
+}
+.rbContainer .rbButtonRed:HOVER abbr{
+	background-position: 0 -35px;
+}
+
+.rbContainer .rbButtonRedDisabled abbr.left{
+	width: 7px;
+	background: url(../img/frontend/red-button-left.png) 0 -70px no-repeat;
+}
+.rbContainer .rbButtonRedDisabled abbr.right{
+	width: 7px;
+	background: url(../img/frontend/red-button-right.png) 0 -70px no-repeat;
+}
+.rbContainer .rbButtonRedDisabled abbr.middle{
+	background: url(../img/frontend/red-button-middle.png) 0 -70px repeat-x;
+    text-shadow: 0 -1px 0 #76828f;
+}
+.rbContainer .rbButtonRedDisabled:HOVER{
+	cursor: default;
+}
+/* Layout */
+.rbContainer{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.rbContainer .rbHeader,
+.rbContainer .rbLeftHeader,
+.rbContainer .rbRightHeader{
+	color: #ffffff;
+	background-color: #455160;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	height: 76px;
+	overflow: hidden;
+	
+	-webkit-border-top-left-radius: 5px;
+	/*-webkit-border-top-right-radius: 5px;*/
+	-moz-border-radius-topleft: 5px;
+	/*-moz-border-radius-topright: 5px;*/
+	border-top-left-radius: 5px;
+	/*border-top-right-radius: 5px;*/
+}
+.rbContainer .rbHeader.rbRightRadius,
+.rbContainer .rbLeftHeader.rbRightRadius,
+.rbContainer .rbRightHeader.rbRightRadius{
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+.rbContainer .rbSystemMessage{
+	color: #ffffff;
+	background-color: #455160;
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 14px;
+	-webkit-border-radius: 5px;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius: 5px;
+	-moz-border-radius-topright: 0;
+	border-radius: 5px;
+	border-top-right-radius: 0;
+}
+.rbContainer .rbSystemMessage.rbRightRadius{
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+.rbContainer .rbHeader .left{
+	float: left;
+	width: 31%;
+}
+.rbContainer .rbHeader label,
+.rbContainer .rbLeftHeader label,
+.rbContainer .rbRightHeader label{
+	display: block;
+	margin: 16px 18px;
+}
+.rbContainer .rbHeader label span,
+.rbContainer .rbLeftHeader label span,
+.rbContainer .rbRightHeader label span{
+	font-weight: 400;
+	font-size: 16px;
+}
+.rbContainer .rbContainerInner{
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+	
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	overflow: hidden;
+}
+.rbContainer .rbContainerInner .rbLeftContainer{
+	float: left;
+	width: 31%;
+}
+.rbContainer .rbContent{
+	overflow: hidden;
+	margin: 16px;
+}
+
+.rbContainer .rbDatepicker {
+    background: #f3f5f6 url(../img/frontend/rb-calendar-icon.png) right center no-repeat;
+    cursor: pointer;
+    width: 130px;
+}
+.rbContainer .rbSearchItem{
+	overflow: hidden;
+	margin: 0 8px 10px 0;
+}
+.rbContainer .rbSearchItemLabel{
+	margin: 5px 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+}
+.rbContainer .rbSearchItemValue{
+	
+}
+.rbContainer .rbSearchControl{
+	margin: 10px 0 0;
+}
+.rbContainer .rbSearchItem .rbSelect{
+	background-color: #f3f5f6;
+}
+.rbContainer .rbSearchItem .rbButtonRed{
+	float: left;
+	margin-right: 8px;
+}
+.rbContainer .rbSearchItem .rbLinkCancel{
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	display: block;
+	line-height: 40px;
+	float: left;
+}
+.rbContainer .rbMapContainer{
+	position: relative;
+	overflow: auto;
+	height: 416px;
+	border-left: 1px solid #dddddd;
+}
+.rbContainer .rbMapContainer .rbLoadingTables{
+	display: block;
+	background: url(../img/frontend/pj-preloader.gif) 0 0 no-repeat;
+	line-height: 32px;
+	padding-left: 37px;
+	margin: 12px;
+}
+.rbContainer .rbMapContainer .rbWTimeMessage{
+	display: block;
+	margin: 12px;
+}
+.rbContainer .rbMapContainer .sbook-rect {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+    background-color: #2a6ab2;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: default;
+	text-decoration: none !important;
+}
+.rbContainer .rbMapContainer .sbook-available {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.rbContainer .rbMapContainer .sbook-busy{
+	color: #ffffff;
+    font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	background-color: #b6cadf;
+	cursor: default;
+}
+.rbContainer .rbTableHolder{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	display: block;
+	float: left;
+	background-color: #2A6AB2;
+	line-height: 22px;
+	padding-left: 6px;
+	padding-right: 6px;
+	color: #FFFFFF !important;
+    font-family: 'Lato',sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+/****booking Form*****/
+.rbContainer .rbBookingDetail{
+	
+}
+.rbContainer .rbBookingDetail p{
+	display: block;
+	margin-bottom: 14px;
+}
+.rbContainer .rbBookingDetail p label.rbTitle{
+	display: block;
+	margin-right: 4px;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	color: #373b3e;
+	margin-bottom: 4px;
+}
+.rbContainer .rbBookingDetail p span{
+	display: block;
+	color: #858994;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	overflow: hidden;
+}
+.rbContainer .rbFormContainer{
+	background-color: #f3f3f3;
+	min-height: 300px;
+	overflow: hidden;
+	border-left: 1px solid #dddddd;
+}
+.rbContainer .rbCheckoutForm{
+	padding: 14px;
+}
+.rbContainer .rbCheckoutForm .rbFormRow{
+	margin-bottom: 14px;
+}
+.rbContainer .rbCheckoutForm .rbFormRow em .rbErrorMsg{
+	color: #ee1813;
+}
+.rbContainer .rbCheckoutForm .rbFormItemLabel{
+	margin-bottom: 3px;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+.rbContainer .rbCheckoutForm .rbFormItemLabel label{
+	font-size: 13px;
+	font-weight: 400;
+	color: #858994;
+}
+.rbContainer .rbCheckoutForm .rbFormItemValue{
+	overflow: hidden;
+}
+.rbContainer .rbCheckoutForm .rbFormItemValue label{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+.rbContainer .rbCheckoutForm .rbFormItemLabel .rbFormStar{
+	color: #ee1813;
+}
+
+.rbContainer .rbPreviewContainer .rbFormRow{
+	overflow: hidden;
+}
+.rbContainer .rbPreviewContainer .rbFormItemLabel{
+	width: 130px;
+	float: left;
+}
+.rbContainer .rbPreviewContainer .rbFormItemValue{
+	color: #858994;
+	overflow: hidden;
+}
+
+.rbContainer .rbAddedVoucher span,
+.rbContainer .rbAddedVoucher a{
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+.rbContainer .rbTermsConditions{
+	line-height: 22px;
+}
+
+.rbContainer .rbHeader{
+	display: block;
+}
+.rbContainer .rbLeftHeader, .rbContainer .rbRightHeader{
+	display: none;
+}
+.rbContainer .rbSelectTimepick{
+	background-color: #f3f5f6;
+	width: 130px;
+	cursor: pointer;
+}
+.pjRbjQueryUI{
+	z-index: 99999 !important;
+	font-size: 13px !important;
+}
+@media only screen and (max-width: 968px) and (min-width: 721px){
+	.rbContainer {
+	    width: 100%;
+	}
+	.rbContainer .rbHeader{
+		display: block;
+	}
+	.rbContainer .rbLeftHeader, .rbContainer .rbRightHeader{
+		display: none;
+	}
+}
+@media only screen and (max-width: 720px){
+	.rbContainer {
+	    width: 100%;
+	}
+	.rbContainer .rbHeader{
+		display: none;
+	}
+	.rbContainer .rbLeftHeader, .rbContainer .rbRightHeader{
+		display: block;
+	}
+	.rbContainer .rbRightHeader{
+		border-top-right-radius: 5px;
+	}
+	.rbContainer .rbContainerInner {
+		border: none;
+	}
+	.rbContainer .rbContainerInner .rbLeftContainer {
+		float: none;
+		width: 100%;
+		margin-bottom: 16px;
+	}
+	.rbContainer .rbRightContainer{
+		width: 100%;
+	}
+	.rbContainer .rbLeftContainer .rbContent,
+	.rbContainer .rbRightContainer .rbMapContainer{
+		background-color: #FFFFFF;
+	    border: 1px solid #DDDDDD !important;
+	    border-bottom-left-radius: 5px;
+	    border-bottom-right-radius: 5px;
+	    overflow: hidden;
+	}
+	.rbContainer .rbRightContainer .rbFormContainer{
+		border: 1px solid #DDDDDD !important;
+	    border-bottom-left-radius: 5px;
+	    border-bottom-right-radius: 5px;
+	}
+	.rbContainer .rbLeftContainer .rbContent{
+		margin: 0px;
+		padding: 16px; 
+	}
+	.rbContainer .rbRightContainer .rbMapContainer{
+		overflow: scroll !important;
+	}
+	.rbContainer .rbRightHeader {
+		height: auto;
+	}
+}

@@ -1,0 +1,176 @@
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper { color: #555d60; }
+#pjWrapper * { font-family: 'Oswald', sans-serif; }
+#pjWrapper .fa { font-family: 'FontAwesome'; }
+#pjWrapper .glyphicon { font-family: 'Glyphicons Halflings'; }
+
+/* ==========================================================================
+	#Styles
+========================================================================== */
+#pjWrapper .pjRbLaunguage .pjRbBtnLaunguageTrigger,
+#pjWrapper .pjRbBtnBack,
+#pjWrapper .pjRbTablesMap .pjRbTablesHotspots .pjRbTableHotspot { line-height: 27px; }
+#pjWrapper .btn-default,
+#pjWrapper .btn-primary { line-height: 46px; }
+#pjWrapper .pjRbReservationDetails dd span { line-height: 33px; }
+
+/* ==========================================================================
+	#Buttons
+========================================================================== */
+#pjWrapper .pjRbBtnBack { border-color: #1a1819; background: #292728; color: #fff; }
+#pjWrapper .pjRbBtnBack:hover,
+#pjWrapper .pjRbBtnBack:focus { border-color: #1a1819; background: #1a1819; color: #fff; }
+#pjWrapper .pjRbBtnBack:before { border-color: #fff; }
+#pjWrapper .pjRbBtnBack:hover:before,
+#pjWrapper .pjRbBtnBack:focus:before { border-color: #fff; }
+
+#pjWrapper .btn-default { border-color: #292728; background: #292728; color: #fff; }
+#pjWrapper .btn-default:hover,
+#pjWrapper .btn-default:focus { border-color: #1a1819; background: #1a1819; color: #fff; }
+
+#pjWrapper .btn-primary { color: #fff; 
+	background: rgb(243,76,42);
+	background: -moz-linear-gradient(top,  rgba(243,76,42,1) 0%, rgba(243,74,41,1) 20%, rgba(234,64,29,1) 80%, rgba(232,62,29,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(243,76,42,1) 0%,rgba(243,74,41,1) 20%,rgba(234,64,29,1) 80%,rgba(232,62,29,1) 100%);
+	background: linear-gradient(to bottom,  rgba(243,76,42,1) 0%,rgba(243,74,41,1) 20%,rgba(234,64,29,1) 80%,rgba(232,62,29,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34c2a', endColorstr='#e83e1d',GradientType=0 );
+}
+#pjWrapper .btn-primary:hover,
+#pjWrapper .btn-primary:focus { 
+	background: rgb(232,62,29);
+	background: -moz-linear-gradient(top,  rgba(232,62,29,1) 0%, rgba(234,64,29,1) 20%, rgba(243,74,41,1) 80%, rgba(243,76,42,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(232,62,29,1) 0%,rgba(234,64,29,1) 20%,rgba(243,74,41,1) 80%,rgba(243,76,42,1) 100%);
+	background: linear-gradient(to bottom,  rgba(232,62,29,1) 0%,rgba(234,64,29,1) 20%,rgba(243,74,41,1) 80%,rgba(243,76,42,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e83e1d', endColorstr='#f34c2a',GradientType=0 );
+}
+
+#pjWrapper .btn-link { color: #d0391c; }
+#pjWrapper .btn-link:after { background: #d0391c; }
+
+#pjWrapper .rbStartOver { color: #d0391c; }
+
+/* ==========================================================================
+	#Forms
+========================================================================== */
+#pjWrapper .pjRbForm label { color: #363a3b; }
+#pjWrapper .pjRbForm .form-control { border-color: #bebabb; background: #fff; color: #555d60; -webkit-box-shadow: none; box-shadow: none; }
+#pjWrapper .pjRbForm .form-control:focus { border-color: #d0391c; -webkit-box-shadow: 0 0 10px rgba(208, 57, 28, .3); box-shadow: 0 0 10px rgba(208, 57, 28, .3); }
+#pjWrapper .pjRbForm .checkbox label { color: #363a3b; }
+#pjWrapper .pjRbForm .checkbox label .btn-link { color: #363a3b; }
+
+#pjWrapper .pjRbForm .pjRbDateTimePicker .form-control:focus,
+#pjWrapper .pjRbForm .pjRbSpinner .form-control:focus { -webkit-box-shadow: none; box-shadow: none; }
+#pjWrapper .pjRbForm .pjRbDateTimePicker .input-group-addon,
+#pjWrapper .pjRbForm .pjRbSpinner .input-group-addon { border-color: #bebabb; color: #f34c2a; }
+#pjWrapper .pjRbForm .pjRbDateTimePicker .input-group-addon { background: #fff; }
+#pjWrapper .pjRbForm .pjRbDateTimePicker .form-control:focus ~ .input-group-addon,
+#pjWrapper .pjRbForm .pjRbDateTimePicker .input-group-addon:hover,
+#pjWrapper .pjRbForm .pjRbSpinner .form-control:focus ~ .input-group-addon,
+#pjWrapper .pjRbForm .pjRbSpinner .input-group-addon:hover { color: #d0391c; }
+#pjWrapper .pjRbForm .pjRbDateTimePicker .form-control:focus ~ .input-group-addon,
+#pjWrapper .pjRbForm .pjRbSpinner .form-control:focus ~ .input-group-addon { border-color: #d0391c; }
+#pjWrapper .pjRbForm .pjRbSpinner .input-group-addon { background: #f3f1f2; }
+
+#pjWrapper .pjRbDateTimePicker td.disabled,
+#pjWrapper .pjRbDateTimePicker td.disabled:hover { background: none; color: #555d60; }
+#pjWrapper .pjRbDateTimePicker [data-action="togglePicker"] span { color: #d0391c; }
+#pjWrapper .pjRbDateTimePicker [data-action="togglePicker"] span:hover { background: none; color: #fff; }
+#pjWrapper .pjRbDateTimePicker .timepicker-picker .btn span,
+#pjWrapper .pjRbDateTimePicker .timepicker-picker .timepicker-hour,
+#pjWrapper .pjRbDateTimePicker .timepicker-picker .timepicker-minute { color: #d0391c; }
+#pjWrapper .pjRbDateTimePicker .timepicker-picker .btn span:hover,
+#pjWrapper .pjRbDateTimePicker .timepicker-picker .timepicker-hour:hover,
+#pjWrapper .pjRbDateTimePicker .timepicker-picker .timepicker-minute:hover { background: #d0391c; color: #fff; }
+#pjWrapper .pjRbDateTimePicker th { color: #424242; }
+#pjWrapper .pjRbDateTimePicker .today:before { border-bottom-color: #f34c2a !important; }
+#pjWrapper .pjRbDateTimePicker .day:hover,
+#pjWrapper .pjRbDateTimePicker .month:hover,
+#pjWrapper .pjRbDateTimePicker .year:hover,
+#pjWrapper .pjRbDateTimePicker .decade:hover,
+#pjWrapper .pjRbDateTimePicker .hour:hover,
+#pjWrapper .pjRbDateTimePicker .minute:hover,
+#pjWrapper .pjRbDateTimePicker .active { background: #d0391c; color: #fff; }
+#pjWrapper .pjRbDateTimePicker .prev span,
+#pjWrapper .pjRbDateTimePicker .next span { color: #d0391c; }
+#pjWrapper .pjRbDateTimePicker .prev:hover,
+#pjWrapper .pjRbDateTimePicker .next:hover { background: #d0391c; }
+#pjWrapper .pjRbDateTimePicker .prev:hover span,
+#pjWrapper .pjRbDateTimePicker .next:hover span { color: #fff; }
+#pjWrapper .pjRbDateTimePicker .picker-switch { color: #d0391c; }
+#pjWrapper .pjRbDateTimePicker .picker-switch:hover,
+#pjWrapper .pjRbDateTimePicker .bootstrap-datetimepicker-widget .active,
+#pjWrapper .pjRbDateTimePicker .bootstrap-datetimepicker-widget .active:hover { background: #d0391c; color: #fff; }
+#pjWrapper .bootstrap-datetimepicker-widget { border-color: #ccc; background: #fff; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before { border-bottom-color: #ccc; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.bottom:after { border-bottom-color: #fff; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.top:before { border-top-color: #ccc; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.top:after { border-top-color: #fff; }
+
+#pjWrapper .pjRbForm .help-block li { color: #a94442; }
+#pjWrapper .pjRbForm .has-error label { color: #a94442; }
+#pjWrapper .pjRbForm .has-error .form-control { border-color: #a94442; }
+#pjWrapper .pjRbForm .has-success label { color: #3c763d; }
+#pjWrapper .pjRbForm .has-success .form-control { border-color: #3c763d; }
+
+/* ==========================================================================
+	#pjRbFormReservation
+========================================================================== */
+#pjWrapper .pjRbFormReservation { background: #fff; }
+#pjWrapper .pjRbFormReservation p { color: #555d60; }
+#pjWrapper .pjRbFormReservation dt,
+#pjWrapper .pjRbFormReservation dd { color: #555d60; }
+
+/* ==========================================================================
+	#pjRbModal
+========================================================================== */
+#pjWrapper .pjRbModal .modal-title { color: #363a3b; }
+#pjWrapper .pjRbModal .modal-body p { color: #555d60; }
+
+/* ==========================================================================
+	#pjRbHeader
+========================================================================== */
+#pjWrapper .pjRbMain .pjRbHeader { background: #3d3938; }
+#pjWrapper .pjRbMain .pjRbHeader .pjRbHeaderTitle { color: #fff; }
+
+/* ==========================================================================
+	#pjRbLaunguage
+========================================================================== */
+#pjWrapper .pjRbLaunguage .pjRbBtnLaunguageTrigger { border-color: #292728; background: #292728; color: #fff; }
+#pjWrapper .pjRbLaunguage .pjRbBtnLaunguageTrigger:hover,
+#pjWrapper .pjRbLaunguage .pjRbBtnLaunguageTrigger:focus,
+#pjWrapper .pjRbLaunguage.open .pjRbBtnLaunguageTrigger { border-color: #1a1819; background: #1a1819; color: #fff; }
+#pjWrapper .pjRbLaunguage .pjRbBtnLaunguageTrigger:before { border-color: #fff; }
+#pjWrapper .pjRbLaunguage .pjRbBtnLaunguageTrigger:hover:before,
+#pjWrapper .pjRbLaunguage .pjRbBtnLaunguageTrigger:focus:before,
+#pjWrapper .pjRbLaunguage.open .pjRbBtnLaunguageTrigger:before { border-color: #fff; }
+#pjWrapper .pjRbLaunguage .dropdown-menu { background: #1a1819; }
+#pjWrapper .pjRbLaunguage .dropdown-menu a { color: #fff; }
+#pjWrapper .pjRbLaunguage .dropdown-menu a:hover,
+#pjWrapper .pjRbLaunguage .dropdown-menu .current a { color: #fff; }
+#pjWrapper .pjRbLaunguage .dropdown-menu a:hover,
+#pjWrapper .pjRbLaunguage .dropdown-menu .current a { background: #d0391c; }
+
+/* ==========================================================================
+	#pjRbBody
+========================================================================== */
+#pjWrapper .pjRbMain .pjRbBody { background: #f3f1f2; }
+#pjWrapper .pjRbMain .pjRbSection .pjRbSectionHead .pjRbSectionTitle { color: #363a3b; }
+#pjWrapper .pjRbMain .pjRbSection .pjRbSectionHead .pjRbSectionSubTitle { color: #777e86; }
+#pjWrapper .pjRbTablesMap { background: #fff; }
+#pjWrapper .pjRbTablesMap .pjRbTablesHotspots .pjRbTableHotspot { background: #d0391c; color: #fff; }
+
+/* ==========================================================================
+	#pjRbReservationDetails
+========================================================================== */
+#pjWrapper .pjRbReservationDetails dt { color: #363a3b; }
+#pjWrapper .pjRbReservationDetails dd { color: #f34c2a; }
+#pjWrapper .pjRbReservationDetails dd span { background: #f34c2a; color: #fff; }
+
+/* Status */
+#pjWrapper .pjRbTablesMap .pjRbTablesHotspots .pjRbHotSpotAvailable { background: #3d3938; }
+
+#pjWrapper .pjRbTablesMap .pjRbTablesHotspots .pjRbTableHotspotChosen { background: #f34c2a; }
+
+#pjWrapper .pjRbTablesMap .pjRbTablesHotspots .pjRbTableHotspotDisabled { background: #e0e0e0; opacity: 1;}

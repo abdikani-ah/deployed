@@ -1,0 +1,10 @@
+/* ==========================================================================
+	#Transitions
+========================================================================== */
+#pjWrapper .btn,
+#pjWrapper .pjRbBtnBack:before,
+#pjWrapper .pjRbLaunguage .dropdown-menu a,
+#pjWrapper .pjRbForm .form-control,
+#pjWrapper .pjRbForm .pjRbDateTimePicker .input-group-addon,
+#pjWrapper .pjRbForm .pjRbSpinner .input-group-addon,
+#pjWrapper .btn-link:after { -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out; -o-transition: all .5s ease-in-out; transition: all .5s ease-in-out; }
